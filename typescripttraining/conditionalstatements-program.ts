@@ -4,7 +4,9 @@ if(marks >90){
 
 if(marks <95){
 console.log("Need Qualification for stage2");
+
 }
+
 else if(marks >=95){
 console.log("pass in 2 stage");
 }

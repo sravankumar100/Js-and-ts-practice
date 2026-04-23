@@ -28,3 +28,9 @@ console.log(sum);
 return sum;
 }
 add(1,2,3,4,5,6,10);
+
+//function as parameter of another function and anonymous function
+const square=function(a:number):number{
+    return a*a;
+}
+square(5);

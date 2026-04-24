@@ -19,7 +19,7 @@ return a+b;
 }
 sum(10,20); */
 //rest parameters
-function add(...num: number[]): number{
+function add2(...num: number[]): number{
 let sum=0;
 for(let n of num){
 sum=sum+n;
@@ -27,10 +27,21 @@ console.log(sum);
 }
 return sum;
 }
-add(1,2,3,4,5,6,10);
+add2(1,2,3,4,5,6,10);
 
 //function as parameter of another function and anonymous function
 const square=function(a:number):number{
     return a*a;
 }
 square(5);
+
+function type(name2:string):string{
+return name2;
+}
+type("virat");
+
+//anonymous function
+const greet=function (name3:string){
+    return name3;
+}
+greet("hello");

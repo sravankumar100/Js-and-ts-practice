@@ -45,3 +45,47 @@ const greet=function (name3:string){
     return name3;
 }
 greet("hello");
+
+//Syntax : function as parameter of another function
+// function outerFunction(paramFunction: functionType): returnType {
+//   // function body
+// }
+
+// Example: Using an anonymous function as parameter of another function
+function run(  greet: (name: string) => void  ): void {
+    greet("Charlie");
+}
+
+function printName(name: string): void {
+    console.log("Hello, "+name+"! Good Morning.");
+}
+
+//calling the function
+run(
+
+function(name:string):void{
+    console.log("Hello, "+name+"! Good Morning.");
+}
+
+)
+
+printName("Bharath");
+
+//function outerFunction(paramFunction: functionType): returnType {
+//   // function body
+// }
+
+function run2(operation: (a: number, b: number) => void): void {
+    operation(10, 20); // call the passed function with arguments
+}
+
+// Example: pass an anonymous function
+run2(function(a: number, b: number): void {
+    console.log("Sum is: " + (a + b));
+});
+
+// Example: pass a named function
+function printSum(a: number, b: number): void {
+    console.log("Sum is: " + (a + b));
+}
+printSum(20,30);
